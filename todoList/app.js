@@ -8,7 +8,7 @@ function formSubmit(event){
   event.preventDefault();
   const task=taskDom.value
   if (task === "") {
-    alert("Boş Geçilemez!")
+    alert("Boş Geçilemez !")
     return; // Eğer task boş ise fonksiyondan çık
   }
   addItem(task)
