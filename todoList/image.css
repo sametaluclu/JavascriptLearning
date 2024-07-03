@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #FF5858, #FFFFFF); /* Kırmızıdan beyaza doğru gradyan */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Beyaz opak arka plan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center; /* Öğeleri dikeyde ortala */
+}
+
+.input-container input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.input-container button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-top: 2px solid #ccc; /* Listenin en üstüne çizgi ekledik */
+    border-bottom: 2px solid #ccc; /* Listenin en altına çizgi ekledik */
+}
+
+ul li {
+    padding: 15px 10px; /* Üst ve alt boşlukları 15px, sağ ve sol boşlukları 10px olarak ayarladık */
+    text-align: left;
+    display: flex; /* Liste öğelerini flex yapısına geçirdik */
+    justify-content: space-between; /* İçerikleri sağa ve sola yaslamak için */
+    align-items: center; /* Dikeyde ortalamak için */
+    border-bottom: 2px solid #ccc; /* Ara çizgileri ekledik */
+}
+
+ul li:first-child {
+    border-top: none; /* Listenin en üstündeki çizgiyi kaldırdık */
+}
+
+ul li:last-child {
+    border-bottom: none; /* Listenin en altındaki çizgiyi kaldırdık */
+}
+
+ul li button {
+    padding: 8px 12px; /* Buton iç boşluğunu ayarladık */
+    background-color: #4CAF50; /* Arkaplan rengi */
+    color: white; /* Yazı rengi */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+
+ul li button:hover {
+    background-color: #45a049; /* Hover durumunda farklı bir arkaplan rengi */
+}
