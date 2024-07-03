@@ -30,7 +30,6 @@ function addItem(task){
   `
   userListDom.append(liDom)
   arr.push(task)
-  console.log(arr)
   localStorage.setItem("key", JSON.stringify(arr));
   let newSiler = document.querySelectorAll(".remover");
       newSiler.forEach(item => {
