@@ -4,8 +4,9 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Öğeleri üstte hizalar */
     height: 100vh;
+    overflow: auto; /* Sayfanın kaydırılabilir olmasını sağlar */
 }
 
 .todo-container {
@@ -13,12 +14,24 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 400px; /* Konteyner yüksekliğini sınırlar */
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 
 h1 {
     text-align: center;
     color: #333;
+    margin: 0;
 }
 
 form {
@@ -60,6 +73,9 @@ ul {
     margin: 0;
     border-top: 2px solid #ccc; /* Listenin en üstüne çizgi ekledik */
     border-bottom: 2px solid #ccc; /* Listenin en altına çizgi ekledik */
+    margin-top: 20px; /* Üstte biraz boşluk bırakır */
+    flex: 1;
+    overflow-y: auto; /* Listeyi kaydırılabilir yapar */
 }
 
 ul li {
